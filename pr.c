@@ -144,3 +144,72 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
+fopen
+/*FILE *archivo;
+archivo = fopen("ejemplo.txt", "w"); // Abre el archivo "ejemplo.txt" en modo escritura
+if (archivo == NULL) {
+  printf("No se pudo abrir el archivo\n");
+} else {
+ Operaciones en el archivo...
+  fclose(archivo); // Cierra el archivo
+}*/
+fseek
+/*FILE *archivo;
+archivo = fopen("ejemplo.txt", "r");
+if (archivo == NULL) {
+    printf("No se pudo abrir el archivo\n");
+} else {
+    fseek(archivo, 10, SEEK_SET); // Mueve el puntero de posición a 10 bytes desde el inicio del archivo
+    // Operaciones en el archivo...
+    fclose(archivo);
+}
+*/
+fscan
+/*FILE *archivo;
+char cadena[50];
+archivo = fopen("ejemplo.txt", "r");
+if (archivo == NULL) {
+    printf("No se pudo abrir el archivo\n");
+} else {
+    fscanf(archivo, "%s", cadena); // Lee una cadena desde el archivo
+    printf("Cadena leída: %s\n", cadena);
+    fclose(archivo);
+}
+*/
+fprint
+/*FILE *archivo;
+archivo = fopen("ejemplo.txt", "w");
+if (archivo == NULL) {
+    printf("No se pudo abrir el archivo\n");
+} else {
+    fprintf(archivo, "Ejemplo de escritura en archivo\n");
+    // Otras operaciones en el archivo...
+    fclose(archivo);
+}
+*/
+FILE
+/*FILE *archivo;
+archivo = fopen("ejemplo.txt", "w");
+if (archivo == NULL) {
+    printf("No se pudo abrir el archivo\n");
+} else {
+    fprintf(archivo, "Ejemplo de escritura en archivo\n");
+    // Otras operaciones en el archivo...
+    fclose(archivo);
+}
+*/
+/*#include <stdio.h>
+
+int main() {
+    FILE *archivo;
+    archivo = fopen("ejemplo.txt", "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo\n");
+    } else {
+        // Operaciones en el archivo...
+        fclose(archivo);
+    }
+    return 0;
+}
+*/
